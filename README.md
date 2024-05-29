@@ -8,7 +8,7 @@ g++, or any c++ compiler. This package includes g++: `sudo apt-get install build
 ## Usage
 As a reference, two sequences and a resulting plot are included. Delete them to avoid confusion with your data!
 
-1. Put the sequences that shall be compared to another in the folders `seq1` and `seq2`. Every Sequence will be compared to a sequence in the other folder, the Sequence in `seq1` will be called "Reference", the other "Read" in the final output.
+1. Put the sequences that shall be compared to another in the folders `seq1` and `seq2`. Every Sequence will be compared to a sequence in the other folder, the Sequence in `seq1` will be called "Reference", the other "Read" in the final output. Letters other than ACTG, or whitespace, will be ignored.
 
 2.  Edit the programs parameters. For speed, this is done as definitions. Open `main.cpp` and adjust the values of these parameters to your needs:
 ```cpp
@@ -27,5 +27,5 @@ g++ main.cpp -Ofast --std=c++20
 ./a.out
 ```
 
-5. In the outputs folder, plots will appear. Green dots represent matches in the forward direction, red ones are backwards matches. Tadaa!
+5. In the outputs folder, plots will appear. Green dots represent matches in the forward direction, red ones are reverse-complement matches. Tadaa!
 During computaion, a file called xyc.txt is created. Once the program has run, it is safe to delete.
