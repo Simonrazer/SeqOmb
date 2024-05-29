@@ -27,5 +27,5 @@ g++ main.cpp -Ofast --std=c++20
 ./a.out
 ```
 
-5. In the outputs folder, plots will appear. Tadaa!
+5. In the outputs folder, plots will appear. Green dots represent matches in the forward direction, red ones are backwards matches. Tadaa!
 During computaion, a file called xyc.txt is created. Once the program has run, it is safe to delete.
