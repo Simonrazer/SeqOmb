@@ -1,0 +1,11 @@
+set origin 0,0
+set size square
+set palette defined (0 "#FF0000", 1 "#00FF00")
+set cbrange [0:1]
+unset colorbox
+set terminal png size 1000,800
+set output fname
+set datafile separator " "
+set xlabel "Reference"
+set ylabel "Read"
+plot "xyc.txt" using 1:2:3 with points pt 5 ps 0.3 palette notitle
